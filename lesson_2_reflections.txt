@@ -1,0 +1,5 @@
+Q. What happens when you initialize a repository? Why do you need to do it?
+A. git init creates metadata for GIT in the directory. 
+
+Q. How is the staging area different from the working directory and the repository? What value do you think it offers?
+A. It give another level of control to users. Users can decide which files from the directory can be grouped into a individual commits.
