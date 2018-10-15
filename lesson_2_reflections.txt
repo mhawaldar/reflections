@@ -3,3 +3,18 @@ A. git init creates metadata for GIT in the directory.
 
 Q. How is the staging area different from the working directory and the repository? What value do you think it offers?
 A. It give another level of control to users. Users can decide which files from the directory can be grouped into a individual commits.
+
+Q. How can you use the staging area to make sure you have one commit per logical change?
+A. Staging area provides a good place holder for all the logical step-by-step changes required for the eventual change. Developer can keep adding incremental changes to staging area until he is ready to commit all his changes for a given enhancement for bug-fix. That way, the user won't have to fear loosing his local changes from his working directory. And the repository won't have any intermediet changes which are half-baked.
+
+Q. What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+A. In real-world prokects, there are various requirements which need to be changed. Different teams are working on different requirements, but essenstially modying same set of files. Here, it helps to create branches for each requirement and let different teams work on them separately. once they are done, their respective changes (branches) can be joined into the final version.
+
+Q. How do the diagrams help you visualize the branch structure?
+A. Instead of going to a list of commits, it helps to see the respective commits organized along with their branches. That gives us a view of which changes/features are part of certain version of software.
+
+Q. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+A. Merging 2 branches let us consolidate the commit/changes from both the branches. After merge, all the respective commits are reachable from the tip of master branch.
+
+Q. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+A. GIT does auto merge whenever there is no conflict. In case of conflict, GIT always need user to manually merge.
